@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>~/doc/www/tracker/bible.html.html</title>
+<meta name="Generator" content="Vim/8.0">
+<meta name="plugin-version" content="vim8.1_v2">
+<meta name="syntax" content="html">
+<meta name="settings" content="number_lines,use_css,pre_wrap,no_foldcolumn,expand_tabs,line_ids,prevent_copy=,use_input_for_pc=fallback">
+<meta name="colorscheme" content="gruvbox">
+<style>
+<!--
+pre { white-space: pre-wrap; font-family: monospace; color: #ebdbb2; background-color: #282828; }
+body { font-family: monospace; color: #ebdbb2; background-color: #282828; }
+* { font-size: 1em; }
+.GruvboxAquaBold { color: #8ec07c; font-weight: bold; }
+.GruvboxGreenBold { color: #b8bb26; font-weight: bold; }
+.GruvboxOrange { color: #fe8019; }
+.htmlLink { color: #a89984; text-decoration: underline; }
+.Comment { color: #928374; font-style: italic; }
+.LineNr { color: #7c6f64; }
+.GruvboxAqua { color: #8ec07c; }
+.GruvboxBlue { color: #83a598; }
+.String { color: #b8bb26; font-style: italic; }
+-->
+</style>
+
+<script>
+<!--
+
+/* function to open any folds containing a jumped-to line before jumping to it */
+function JumpToLine()
+{
+  var lineNum;
+  lineNum = window.location.hash;
+  lineNum = lineNum.substr(1); /* strip off '#' */
+
+  if (lineNum.indexOf('L') == -1) {
+    lineNum = 'L'+lineNum;
+  }
+  var lineElem = document.getElementById(lineNum);
+  /* Always jump to new location even if the line was hidden inside a fold, or
+   * we corrected the raw number to a line ID.
+   */
+  if (lineElem) {
+    lineElem.scrollIntoView(true);
+  }
+  return true;
+}
+if ('onhashchange' in window) {
+  window.onhashchange = JumpToLine;
+}
+
+-->
+</script>
+</head>
+<body onload='JumpToLine();'>
+<pre id='vimCodeElement'>
+<span id="L1" class="LineNr"> 1 </span><span class="Comment">&lt;!doctype html&gt;</span>
+<span id="L2" class="LineNr"> 2 </span><span class="GruvboxAquaBold">&lt;</span><span class="GruvboxBlue">html</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L3" class="LineNr"> 3 </span><span class="GruvboxAquaBold">&lt;</span><span class="GruvboxBlue">head</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L4" class="LineNr"> 4 </span><span class="GruvboxAqua">    </span><span class="GruvboxAquaBold">&lt;</span><span class="GruvboxBlue">meta</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">charset</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;UTF-8&quot;</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L5" class="LineNr"> 5 </span><span class="GruvboxAqua">    </span><span class="GruvboxAquaBold">&lt;</span><span class="GruvboxBlue">meta</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">name</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;viewport&quot;</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">content</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L6" class="LineNr"> 6 </span><span class="GruvboxAqua">    </span><span class="GruvboxAquaBold">&lt;</span><span class="GruvboxBlue">link</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">rel</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;preconnect&quot;</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">href</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;<a href="https://fonts.googleapis.com">https://fonts.googleapis.com</a>&quot;</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L7" class="LineNr"> 7 </span><span class="GruvboxAqua">    </span><span class="GruvboxAquaBold">&lt;</span><span class="GruvboxBlue">link</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">rel</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;preconnect&quot;</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">href</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;<a href="https://fonts.gstatic.com">https://fonts.gstatic.com</a>&quot;</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">crossorigin</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L8" class="LineNr"> 8 </span><span class="GruvboxAqua">    </span><span class="GruvboxAquaBold">&lt;</span><span class="GruvboxBlue">link</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">rel</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;stylesheet&quot;</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">href</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;<a href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200</a>&quot;</span><span class="GruvboxAquaBold"> /&gt;</span>
+<span id="L9" class="LineNr"> 9 </span><span class="GruvboxAqua">    </span><span class="GruvboxAquaBold">&lt;</span><span class="GruvboxBlue">link</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">href</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;./style.css&quot;</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">rel</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;stylesheet&quot;</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L10" class="LineNr">10 </span><span class="GruvboxAquaBold">&lt;/</span><span class="GruvboxBlue">head</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L11" class="LineNr">11 </span><span class="GruvboxAquaBold">&lt;</span><span class="GruvboxBlue">body</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">class</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;serif flex col place-center&quot;</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L12" class="LineNr">12 </span>   <span class="GruvboxAquaBold">&lt;</span><span class="GruvboxBlue">form</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">id</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;form&quot;</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">action</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;bible.html&quot;</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">class</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;flex row max-content&quot;</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L13" class="LineNr">13 </span>        <span class="GruvboxAquaBold">&lt;</span><span class="GruvboxBlue">a</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">href</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;index.html&quot;</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">class</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;logo text-r2&quot;</span><span class="GruvboxAquaBold">&gt;</span><span class="htmlLink">falkon</span><span class="GruvboxAquaBold">&lt;/</span><span class="GruvboxBlue">a</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L14" class="LineNr">14 </span>       <span class="GruvboxAquaBold">&lt;</span><span class="GruvboxBlue">div</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">class</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;flex row base-style&quot;</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L15" class="LineNr">15 </span>           <span class="GruvboxAquaBold">&lt;</span><span class="GruvboxBlue">input</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">class</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;font-body&quot;</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">type</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;search&quot;</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">name</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;q&quot;</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">placeholder</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;Ex: rom 12:1-2,5-7,9,13:1-9&amp;10&quot;</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">required</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L16" class="LineNr">16 </span>           <span class="GruvboxAquaBold">&lt;</span><span class="GruvboxBlue">button</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">type</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;submit&quot;</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">name</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;lamp&quot;</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">value</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;off&quot;</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L17" class="LineNr">17 </span>               <span class="GruvboxAquaBold">&lt;</span><span class="GruvboxBlue">span</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">class</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;material-symbols-outlined&quot;</span><span class="GruvboxAquaBold"> &gt;</span>
+<span id="L18" class="LineNr">18 </span>                   search
+<span id="L19" class="LineNr">19 </span>               <span class="GruvboxAquaBold">&lt;/</span><span class="GruvboxBlue">span</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L20" class="LineNr">20 </span>           <span class="GruvboxAquaBold">&lt;/</span><span class="GruvboxBlue">button</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L21" class="LineNr">21 </span>       <span class="GruvboxAquaBold">&lt;/</span><span class="GruvboxBlue">div</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L22" class="LineNr">22 </span>       <span class="GruvboxAquaBold">&lt;</span><span class="GruvboxBlue">button</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">class</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;base-style&quot;</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">type</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;button&quot;</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">onclick</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;lampSwitch()&quot;</span><span class="GruvboxAquaBold"> &gt;</span>
+<span id="L23" class="LineNr">23 </span>           <span class="GruvboxAquaBold">&lt;</span><span class="GruvboxBlue">span</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">class</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;material-symbols-outlined&quot;</span><span class="GruvboxAquaBold"> &gt;</span>
+<span id="L24" class="LineNr">24 </span>               wall_lamp
+<span id="L25" class="LineNr">25 </span>           <span class="GruvboxAquaBold">&lt;/</span><span class="GruvboxBlue">span</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L26" class="LineNr">26 </span>       <span class="GruvboxAquaBold">&lt;/</span><span class="GruvboxBlue">button</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L27" class="LineNr">27 </span>   <span class="GruvboxAquaBold">&lt;/</span><span class="GruvboxBlue">form</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L28" class="LineNr">28 </span>   <span class="GruvboxAquaBold">&lt;</span><span class="GruvboxBlue">div</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">class</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;base-style max-content breathe&quot;</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L29" class="LineNr">29 </span>       <span class="GruvboxAquaBold">&lt;</span><span class="GruvboxBlue">h1</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">id</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;title&quot;</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">class</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;text-r2&quot;</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L30" class="LineNr">30 </span><span class="GruvboxGreenBold">           Bible browser</span>
+<span id="L31" class="LineNr">31 </span><span class="GruvboxGreenBold">       </span><span class="GruvboxAquaBold">&lt;/</span><span class="GruvboxBlue">h1</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L32" class="LineNr">32 </span>       <span class="GruvboxAquaBold">&lt;</span><span class="GruvboxBlue">p</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">class</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;mono small gray&quot;</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L33" class="LineNr">33 </span>            powered by
+<span id="L34" class="LineNr">34 </span>            <span class="GruvboxAquaBold">&lt;</span><span class="GruvboxBlue">a</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">href</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;<a href="https://github.com/seven1m/bible_api">https://github.com/seven1m/bible_api</a>&quot;</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">class</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;ital&quot;</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L35" class="LineNr">35 </span>                <span class="htmlLink">bible-api</span>
+<span id="L36" class="LineNr">36 </span>            <span class="GruvboxAquaBold">&lt;/</span><span class="GruvboxBlue">a</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L37" class="LineNr">37 </span>       <span class="GruvboxAquaBold">&lt;/</span><span class="GruvboxBlue">p</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L38" class="LineNr">38 </span>       <span class="GruvboxAquaBold">&lt;</span><span class="GruvboxBlue">p</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">id</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;verse&quot;</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">class</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;text-r1 serif&quot;</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L39" class="LineNr">39 </span>            (16) Fiindcă atât de mult a iubit Dumnezeu lumea, că a dat pe singurul Lui Fiu, pentru ca oricine crede în El să nu piară, ci să aibă viața veșnică.
+<span id="L40" class="LineNr">40 </span>       <span class="GruvboxAquaBold">&lt;/</span><span class="GruvboxBlue">p</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L41" class="LineNr">41 </span>   <span class="GruvboxAquaBold">&lt;/</span><span class="GruvboxBlue">div</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L42" class="LineNr">42 </span><span class="GruvboxAquaBold">&lt;</span><span class="GruvboxBlue">script</span><span class="GruvboxAquaBold"> </span><span class="GruvboxOrange">src</span><span class="GruvboxAquaBold">=</span><span class="String">&quot;script.js&quot;</span><span class="GruvboxAquaBold">&gt;</span><span class="GruvboxAquaBold">&lt;/</span><span class="GruvboxBlue">script</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L43" class="LineNr">43 </span><span class="GruvboxAquaBold">&lt;</span><span class="GruvboxBlue">script</span><span class="GruvboxAquaBold">&gt;</span><span class="GruvboxGreenBold">verse</span>( q_param, <span class="String">'rccv'</span> )<span class="GruvboxAquaBold">&lt;/</span><span class="GruvboxBlue">script</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L44" class="LineNr">44 </span><span class="GruvboxAquaBold">&lt;/</span><span class="GruvboxBlue">body</span><span class="GruvboxAquaBold">&gt;</span>
+<span id="L45" class="LineNr">45 </span><span class="GruvboxAquaBold">&lt;/</span><span class="GruvboxBlue">html</span><span class="GruvboxAquaBold">&gt;</span>
+</pre>
+</body>
+</html>
+<!-- vim: set foldmethod=manual : -->

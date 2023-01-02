@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body class="serif flex col place-center">
+   <form id="form" action="bible.html" class="flex row max-content">
+        <a href="index.html" class="logo text-r2">falkon</a>
+       <div class="flex row base-style">
+           <input class="font-body gray" type="search" name="q" placeholder="Ex: rom 12:1-2,5-7,9,13:1-9&10" required>
+           <button type="submit" name="lamp" value="off">
+               <span class="material-symbols-outlined" >
+                   search
+               </span>
+           </button>
+       </div>
+       <button class="base-style" type="button" onclick="lampSwitch()" >
+           <span class="material-symbols-outlined" >
+               wall_lamp
+           </span>
+       </button>
+   </form>
+   <div class="base-style breathe">
+       <h1 id="title" class="text-r2">
+           Bible browser
+       </h1>
+       <p class="mono small gray">
+            powered by 
+            <a href="https://github.com/seven1m/bible_api" class="ital">
+                bible-api
+            </a>
+       </p>
+       <p id="verse" class="text-r1 serif">
+            (16) Fiindcă atât de mult a iubit Dumnezeu lumea, că a dat pe singurul Lui Fiu, pentru ca oricine crede în El să nu piară, ci să aibă viața veșnică.
+       </p>
+   </div>
+<script src="script.js"></script>
+<script>verse( q_param, 'rccv' )</script>
+</body>
+</html>
