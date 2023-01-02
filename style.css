@@ -35,13 +35,13 @@ body {
     background: var(--bg-body);
     color: var(--color-body);
 
-    transition-timing-function: var(--transition-bezier);
-    transition-duration: var(--transition-time);
+    /*transition-timing-function: var(--transition-bezier);
+    transition-duration: var(--transition-time);*/
 }
 
 .material-symbols-outlined {
     color: var(--color-body);
-    transition: inherit;
+    /*transition: inherit;*/
     margin-top: 0.25rem;
     font-variation-settings:
     'FILL' 0,
@@ -136,13 +136,14 @@ a {
 
 .gray {
     color: var(--gray);
-    transition: inherit;
+    /*transition: inherit;*/
 }
 
 .base-style {
     padding: 0.5rem;
     background: var(--bg-base);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: box-shadow;
+    transition-timing-function: var(--transition-bezier);
     transition-duration: 300ms;
     border: 1px solid var(--bg-body);
     border-radius: 10px;
