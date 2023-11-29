@@ -15,10 +15,10 @@ function verse(loc, tr) {
         });
 }
 
-const light_color_body = "#282828"
-const light_bg_body    = "#f5f5f5"
-const light_bg_base    = "#ffffff"
-const light_gray       = "gray"
+const light_color_body = "#1d2021"
+const light_bg_body    = "#d5c4a1"
+const light_bg_base    = "#ebdbb3"
+const light_gray       = "#282828"
 
 function lightMode() {
     body.style.setProperty('--color-body', light_color_body)
@@ -27,10 +27,10 @@ function lightMode() {
     body.style.setProperty('--gray', light_gray)
 }
 
-const dark_color_body = "#f5f5f5"
-const dark_bg_body    = "#404258"
-const dark_bg_base    = "#474e68"
-const dark_gray       = "#d5c7d8"
+const dark_color_body = "#ebdbb3"
+const dark_bg_body    = "#1d2021"
+const dark_bg_base    = "#282828"
+const dark_gray       = "#928374"
 
 function darkMode() {
     body.style.setProperty('--color-body', dark_color_body)

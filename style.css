@@ -2,25 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 
 body {
-    --color-body: #282828;
-    --bg-body: #f5f5f5;
+    --color-body: #1d2021;
+    --bg-body: #d5c4a1;
     
-    --bg-base: #fff;
+    --bg-base: #ebdbb3;
     
-    --gray: gray;
+    --gray: #282828;
 
     --transition-bezier: cubic-bezier(0.4, 0, 0.2, 1);
     --transition-time: 300ms;
 }
-
-/*:root {
-    --color-body: #f5f5f5;
-    --bg-body: #404258;
-
-    --bg-base: #474e68;
-
-    --gray: #d5c7d8;
-}*/
 
 html {
     line-height: 1.5;
@@ -205,7 +196,7 @@ form {
 }
 
 table {
-    border: 1px solid gray;
+    border: 1px solid --gray;
     border-collapse: separate;
     border-spacing: 0.5rem;
     width: 100%;
